@@ -1,1 +1,1 @@
-# ticket-handler-ya.liceum-
+# ticket-handler-ya.liceum
