@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>460</width>
+      <height>320</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_user">
+     <attribute name="title">
+      <string>пользователь</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Мои обращения</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_add">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>0</y>
+        <width>100</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>добавить</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="user_table">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>451</width>
+        <height>251</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_update">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>0</y>
+        <width>100</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>обновить</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_admin">
+     <attribute name="title">
+      <string>администратор</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>101</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Обращения</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_sorting">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>110</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="currentText">
+       <string>сначала старые</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>сначала старые</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>сначала новые</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="btn_categories">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>265</y>
+        <width>160</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>редактировать категории</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_admins">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>265</y>
+        <width>110</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>администраторы</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="admin_table">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>331</width>
+        <height>231</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_admin_update">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>0</y>
+        <width>100</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>обновить</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>339</x>
+        <y>60</y>
+        <width>111</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QCheckBox" name="checkBox_waiting">
+         <property name="text">
+          <string>в обработке</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_reviewed">
+         <property name="text">
+          <string> рассмотрено</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_closed">
+         <property name="text">
+          <string>закрыто</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QComboBox" name="cb_cat_sorting">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>130</y>
+        <width>110</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="currentText">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>460</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionqwe">
+   <property name="text">
+    <string>qwe</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>пользователь</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>администратор</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
